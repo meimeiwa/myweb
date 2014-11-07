@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"/>
+<title>信息列表</title>
+<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+<link href="reset.css" rel="stylesheet" rev="stylesheet" type="text/css">
+<link href="right.css" rel="stylesheet" rev="stylesheet" type="text/css">
+<script type="text/javascript" src="check-all.js"></script>
+<script language="javascript">
+function gotoPage(i) {if (i < 1) {alert('Ò³Âë±ØÐë´óÓÚ0');return;}if (i > 393) {alert('Ò³Âë²»ÄÜ³¬¹ý393');return;}if (!this.queryPage) {alert('Error: function [queryPage] not defined!');return;}this.queryPage(i);}
+</script>
+<script language="javascript">
+function $(node){
+	return document.getElementById(node);
+}
+function queryPage(currentPage){
+	var deptId=$("departmentId").value;
+  var location = "?pageIndex=" + currentPage+"&departmentId="+deptId;
+  window.location.href = location;
+ 
+} function check()
+{
+	  var departmentId=document.getElementById("departmentId").value;
+	  var name=document.getElementById("name").value;
+	  var phone=document.getElementById("phone").value;
+	  var cardNumber=document.getElementById("cardNumber").value;
+	  window.location.href="member!list.do?departmentId="+departmentId+"&name="+name+"&phone="+phone+"&cardNumber="+cardNumber;
+	  
+}
+
+</script>
+</head>
+<body>
+<div class="right_M">
+<div class="zhanwei"></div>
+<h5 class="table_bar"><span class="title">»áÔ±×Öµä</span></h5>
+<form name="deleteForm" method="post">
+<div class="table_content">
+<div style="margin:10px;">
+   
+	门店选择<select name="departmentId" id="departmentId" style="width:200px;">
+				<option value="-1">请选择</option>
+				
+	
+				    <option value="-1" selected="">选择一</option>
+				 
+	
+				    <option value="2">选择一</option>
+				 
+	
+				    <option value="3">选择一</option>
+				 
+	
+				    <option value="4">选择一</option>
+				 
+	
+				    <option value="5">选择一</option>
+				 
+	
+				    <option value="9">选择一</option>
+				 
+	
+				    <option value="10">选择一</option>
+				 
+	
+				    <option value="11">选择一</option>
+				 
+	
+				    <option value="12">选择一</option>
+				 
+	</select>
+	
+    <style type="text/css">
+    .form-control{display: inline-block; width: 200px;}
+    </style>
+   
+	<div class="col-lg-2">选项<input type="text" class="form-control" name="name" id="name" value=""></div>
+	<div class="col-lg-2">选项<input type="text" class="form-control" name="name" id="name" value=""></div>
+	<div class="col-lg-2">选项<input type="text" class="form-control" name="name" id="name" value=""></div>
+	<input type="button" class="btn" value="确定" onclick="check()">
+	 
+</div>
+<table class="UF_table" border="0">
+	<tbody><tr>
+		<th class="UF_th1"><input name="chkall" type="checkbox" id="chkall" value="all" onclick="checkAll(this.form)"> </th>
+		<th class="UF_th2">序号</th>
+		<th class="UF_th3">门店</th>
+		<th class="UF_th3">姓名</th>
+		<th class="UF_th4">联系方式</th>
+		<th class="UF_th5">生日</th>
+		<th class="UF_th9">卡号</th>
+		<th class="UF_th8">办卡日期</th>
+		<th class="UF_th6">面值</th>
+		<th class="UF_th10">操作</th>
+	</tr>
+	
+	<tr class="bg1">
+		<td><input type="checkbox" name="deleteId" value="11741"></td>
+		<td><a href="http://211.103.246.248/CRM/member!showForm.do?id=11741">修改</a></td>
+		<td>哈尔滨革新店</td>
+		<td>侯女士</td>
+		<td>13845055586</td>
+		<td>1964-07-09</td>
+		<td>8882018880013915</td>
+		<td>2014-10-30</td>
+		<td>2108</td>
+		<td><a href="http://211.103.246.248/CRM/member!showView.do?id=11741">修改</a></td>
+	</tr>
+	
+	<tr class="bg2">
+		<td><input type="checkbox" name="deleteId" value="11632"></td>
+		<td><a href="http://211.103.246.248/CRM/member!showForm.do?id=11632">修改</a></td>
+		<td>哈尔滨革新店</td>
+		<td>侯女士</td>
+		<td>15611088130</td>
+		<td></td>
+		<td>8882168890104202</td>
+		<td>2014-10-24</td>
+		<td>5000</td>
+		
+		
+		<td><a href="http://211.103.246.248/CRM/member!showView.do?id=11632">修改</a></td>
+	</tr>
+	<tr class="bg1">
+		<td><input type="checkbox" name="deleteId" value="11741"></td>
+		<td><a href="http://211.103.246.248/CRM/member!showForm.do?id=11741">修改</a></td>
+		<td>哈尔滨革新店</td>
+		<td>侯女士</td>
+		<td>13845055586</td>
+		<td>1964-07-09</td>
+		<td>8882018880013915</td>
+		<td>2014-10-30</td>
+		<td>2108</td>
+		<td><a href="http://211.103.246.248/CRM/member!showView.do?id=11741">修改</a></td>
+	</tr>
+	
+	<tr class="bg2">
+		<td><input type="checkbox" name="deleteId" value="11632"></td>
+		<td><a href="http://211.103.246.248/CRM/member!showForm.do?id=11632">修改</a></td>
+		<td>哈尔滨革新店</td>
+		<td>侯女士</td>
+		<td>15611088130</td>
+		<td></td>
+		<td>8882168890104202</td>
+		<td>2014-10-24</td>
+		<td>5000</td>
+		
+		
+		<td><a href="http://211.103.246.248/CRM/member!showView.do?id=11632">修改</a></td>
+	</tr>
+	<tr class="bg1">
+		<td><input type="checkbox" name="deleteId" value="11741"></td>
+		<td><a href="http://211.103.246.248/CRM/member!showForm.do?id=11741">修改</a></td>
+		<td>哈尔滨革新店</td>
+		<td>侯女士</td>
+		<td>13845055586</td>
+		<td>1964-07-09</td>
+		<td>8882018880013915</td>
+		<td>2014-10-30</td>
+		<td>2108</td>
+		<td><a href="http://211.103.246.248/CRM/member!showView.do?id=11741">修改</a></td>
+	</tr>
+	
+	<tr class="bg2">
+		<td><input type="checkbox" name="deleteId" value="11632"></td>
+		<td><a href="http://211.103.246.248/CRM/member!showForm.do?id=11632">修改</a></td>
+		<td>哈尔滨革新店</td>
+		<td>侯女士</td>
+		<td>15611088130</td>
+		<td></td>
+		<td>8882168890104202</td>
+		<td>2014-10-24</td>
+		<td>5000</td>
+		
+		
+		<td><a href="http://211.103.246.248/CRM/member!showView.do?id=11632">修改</a></td>
+	</tr>
+	<tr class="bg1">
+		<td><input type="checkbox" name="deleteId" value="11741"></td>
+		<td><a href="http://211.103.246.248/CRM/member!showForm.do?id=11741">修改</a></td>
+		<td>哈尔滨革新店</td>
+		<td>侯女士</td>
+		<td>13845055586</td>
+		<td>1964-07-09</td>
+		<td>8882018880013915</td>
+		<td>2014-10-30</td>
+		<td>2108</td>
+		<td><a href="http://211.103.246.248/CRM/member!showView.do?id=11741">修改</a></td>
+	</tr>
+	
+	<tr class="bg2">
+		<td><input type="checkbox" name="deleteId" value="11632"></td>
+		<td><a href="http://211.103.246.248/CRM/member!showForm.do?id=11632">修改</a></td>
+		<td>哈尔滨革新店</td>
+		<td>侯女士</td>
+		<td>15611088130</td>
+		<td></td>
+		<td>8882168890104202</td>
+		<td>2014-10-24</td>
+		<td>5000</td>
+		
+		
+		<td><a href="http://211.103.246.248/CRM/member!showView.do?id=11632">修改</a></td>
+	</tr>
+	<tr class="bg1">
+		<td><input type="checkbox" name="deleteId" value="11741"></td>
+		<td><a href="http://211.103.246.248/CRM/member!showForm.do?id=11741">修改</a></td>
+		<td>哈尔滨革新店</td>
+		<td>侯女士</td>
+		<td>13845055586</td>
+		<td>1964-07-09</td>
+		<td>8882018880013915</td>
+		<td>2014-10-30</td>
+		<td>2108</td>
+		<td><a href="http://211.103.246.248/CRM/member!showView.do?id=11741">修改</a></td>
+	</tr>
+	
+	<tr class="bg2">
+		<td><input type="checkbox" name="deleteId" value="11632"></td>
+		<td><a href="http://211.103.246.248/CRM/member!showForm.do?id=11632">修改</a></td>
+		<td>哈尔滨革新店</td>
+		<td>侯女士</td>
+		<td>15611088130</td>
+		<td></td>
+		<td>8882168890104202</td>
+		<td>2014-10-24</td>
+		<td>5000</td>
+		
+		
+		<td><a href="http://211.103.246.248/CRM/member!showView.do?id=11632">修改</a></td>
+	</tr>
+	<tr class="bg1">
+		<td><input type="checkbox" name="deleteId" value="11741"></td>
+		<td><a href="http://211.103.246.248/CRM/member!showForm.do?id=11741">修改</a></td>
+		<td>哈尔滨革新店</td>
+		<td>侯女士</td>
+		<td>13845055586</td>
+		<td>1964-07-09</td>
+		<td>8882018880013915</td>
+		<td>2014-10-30</td>
+		<td>2108</td>
+		<td><a href="http://211.103.246.248/CRM/member!showView.do?id=11741">修改</a></td>
+	</tr>
+	
+	<tr class="bg2">
+		<td><input type="checkbox" name="deleteId" value="11632"></td>
+		<td><a href="http://211.103.246.248/CRM/member!showForm.do?id=11632">修改</a></td>
+		<td>哈尔滨革新店</td>
+		<td>侯女士</td>
+		<td>15611088130</td>
+		<td></td>
+		<td>8882168890104202</td>
+		<td>2014-10-24</td>
+		<td>5000</td>
+		
+		
+		<td><a href="http://211.103.246.248/CRM/member!showView.do?id=11632">修改</a></td>
+	</tr>
+	
+	
+	
+</tbody></table>
+<div class="pageDiv">
+<div class="fenye">
+    
+     <a class="btn" href="http://211.103.246.248/CRM/member!showForm.do">添加</a>
+     <input class="btn" type="button" name="_delete" value="删除" onclick="doDelete(this.form,&#39;member&#39;)"> 
+	
+	第<strong class="red">1</strong>页<strong class="red">393</strong>1<span>1<b class="red">3929</b>123</span> 
+	<div class="">
+		分页
+      <ul class="pagination">
+        <li><a href="#">«</a></li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">»</a></li>
+      </ul>
+    </div>
+		山东高速高:<input type="text" class="text_input" id="directGotoSomePage" size="2">23
+	<input type="button" class="btn" onclick="gotoPage(document.getElementById(&#39;directGotoSomePage&#39;).value)" value="跳转"></div>
+<div class="clear"></div>
+</div>
+
+</div></form>
+
+
+</div></body></html>

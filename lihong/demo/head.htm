@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"/>
+<title>顶部</title>
+<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+<link href="reset.css" rel="stylesheet" rev="stylesheet" type="text/css">
+<link href="head.css" rel="stylesheet" rev="stylesheet" type="text/css">
+<script type="text/javascript">
+  function startTime(){
+   var today=new Date();
+   var h=today.getHours();
+   var m=today.getMinutes();
+   var s=today.getSeconds();
+   m=checkTime(m);
+   s=checkTime(s);
+   document.getElementById("my").innerHTML=h+":"+m+":"+s;
+   t=setTimeout('startTime()',500);
+   }
+  function checkTime(i){
+   if(i<10){
+   i="0"+i;
+    }
+  return i;
+   }
+   </script>
+</head>
+	<body onload="startTime();">
+	<div id="index_layout">
+		<div id="index_head">
+			<div class="head_content">
+				<a target="_top" href="http://211.103.246.248/CRM/logout.do" class="style2">登出</a> | <a target="main" href="http://211.103.246.248/CRM/user!changePassword.do?userName=admin">修改秘密 </a> | <a target="blank" href="http://211.103.246.248/CRM/help/ems_help_admin.htm">帮助</a><br>
+				当前版本( <span class="style2"> 1.0 </span> )<br>
+				当前时间<span id="my">16:41:30</span><br>
+                <span class="style3">欢迎你 <span class="style2"> [admin] </span></span>
+			</div>
+		</div>
+	</div>
+	
+
+</body></html>

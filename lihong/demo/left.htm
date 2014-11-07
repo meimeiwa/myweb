@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"/>
+<title>顶部</title>
+<link href="reset.css" rel="stylesheet" rev="stylesheet" type="text/css">
+<link href="left.css" rel="stylesheet" rev="stylesheet" type="text/css">
+<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+<style type="text/css">
+div#wrap {
+	width: 760px;
+	margin: 0 auto;
+}
+</style>
+</head>
+<body>
+<script language="javascript"> 
+stuHover = function() { 
+var cssRule; 
+var newSelector; 
+for (var i = 0; i < document.styleSheets.length; i++) 
+   for (var x = 0; x < document.styleSheets[i].rules.length ; x++) 
+    { 
+    cssRule = document.styleSheets[i].rules[x]; 
+    if (cssRule.selectorText.indexOf("LI:hover") != -1) 
+    { 
+     newSelector = cssRule.selectorText.replace(/LI:hover/gi, "LI.iehover"); 
+     document.styleSheets[i].addRule(newSelector , cssRule.style.cssText); 
+    } 
+   } 
+var getElm = document.getElementById("wo_nav").getElementsByTagName("LI"); 
+for (var i=0; i<getElm.length; i++) { 
+   getElm[i].onmouseover=function() { 
+    this.className+=" iehover"; 
+   } ;
+   getElm[i].onmouseout=function() { 
+    this.className=this.className.replace(new RegExp(" iehover\\b"), ""); 
+   } ;
+} 
+} ;
+if (window.attachEvent) window.attachEvent("onload", stuHover); 
+</script>
+<div id="Icenter_left">
+<div class="thebars">
+<ul id="wo_nav">
+    
+	<li><a href="javascript:void(0)" class="index_bar"><span class="style6" id="titleBar2">菜单一</span></a>
+	<ul class="bar_nav">
+		<li class="style5"><a target="main" href="http://211.103.246.248/CRM/user!list.do" class="style4">菜单一</a></li>
+		<li class="style5"><a target="main" href="http://211.103.246.248/CRM/department!list.do" class="style4">菜单一</a></li>
+		
+	</ul>
+	</li>
+	
+	<li><a href="javascript:void(0)" class="index_bar"><span class="style6" id="titleBar3">菜单一</span></a>
+	<ul class="bar_nav">
+		<li class="style5"><a target="main" href="member!list.htm" class="style4">菜单一</a></li>
+		<li class="style5"><a target="main" href="http://211.103.246.248/CRM/member!warn.do" class="style4">菜单一</a></li>
+	</ul>
+	</li>
+	
+	
+	<li><a href="javascript:void(0)" class="index_bar"><span class="style6" id="titleBar3">菜单一</span></a>
+	<ul class="bar_nav">
+		<li class="style5"><a target="main" href="http://211.103.246.248/CRM/reCharge!list.do" class="style4">菜单一</a></li>
+	
+	</ul>
+	</li>
+</ul>
+<div class="clear"></div>
+</div>
+</div>
+
+</body></html>

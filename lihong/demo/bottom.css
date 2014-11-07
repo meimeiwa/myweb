@@ -1,0 +1,13 @@
+@charset "utf-8";
+body{
+background:#333;
+margin:0;
+padding:0;
+color: #fff;
+padding: 10px;
+}
+.banquan{
+float:right;
+margin-right:10px;
+font-size:11px;
+}
