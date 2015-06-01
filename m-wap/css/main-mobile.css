@@ -1,0 +1,199 @@
+body,
+html {
+  font-family: 'Open Sans', sans-serif;
+}
+.navbar {
+  color: #FFF;
+}
+.navbar a {
+  color: #FFF;
+}
+.navbar .shyp-logo {
+  height: 45px;
+  padding-top: 5px;
+  padding-left: 20px;
+}
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+  background: none;
+}
+.jumbotron {
+  background: url(../images/mobile/better/background.png) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin-bottom: 0;
+  margin-top: -50px;
+  padding-left: 0;
+  padding-right: 0;
+}
+.jumbotron .container {
+  max-width: 800px;
+  margin: 80px auto;
+}
+.jumbotron .download-button {
+  max-width: 280px;
+  width: 145px;
+}
+.jumbotron h1,
+.jumbotron p {
+  text-align: center;
+  color: #FFF;
+}
+.jumbotron h1 {
+  font-weight: 300;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.jumbotron p {
+  color: #fff;
+  font-size: 12px;
+}
+.jumbotron .download {
+  margin-top: 160px;
+  margin-bottom: 10px;
+}
+.pull-right {
+  float: none;
+}
+.container.content a {
+  text-decoration: none;
+}
+.container.content h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.container.content p {
+  text-align: center;
+  color: #333;
+  font-size: 12px;
+  margin: 0 10px;
+  max-width: 600px;
+}
+.container.content.what-to-ship {
+  padding-bottom: 60px;
+  background: #fff;
+  width: 100%;
+  font-size: 18px;
+}
+.container.content.snap-a-photo {
+  width: 100%;
+  background: #fff;
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #e6e6e6;
+}
+.container.content .iphone-screen {
+  padding-top: 40px;
+  margin-bottom: 0;
+  height: 406px;
+  overflow: hidden;
+}
+.container.content.what-to-ship .iphone-screen{
+  height: auto;
+}
+.container.content.request-a-pickup {
+ /* padding-top: 40px;*/
+  width: 100%;
+  background: #fff;
+  border-bottom: 1px solid #ececec;
+}
+.container.content.request-a-pickup .iphone-screen {
+  padding-top: 40px;
+  margin-bottom: 0;
+}
+.container.content.download {
+  background: #FFF;
+  padding: 40px 0;
+  width: 100%;
+}
+.container.content.customers {
+  padding-top: 10px;
+  width: 100%;
+  background: #fff;
+  /*border-bottom: 1px solid #dbe3ec;*/
+  padding-bottom: 60px;
+  background: url(../images/mobile/background2.png) 0 0 repeat;
+  background-size: 20px 20px;
+}
+.container.content.customers .iphone-screen {
+  padding-top: 40px;
+  margin-bottom: 0;
+}
+.container.content.customers .customer-info {
+  max-width: 400px;
+  text-align: left;
+  padding: 0;
+  margin-bottom: 60px;
+  color: #000;
+  font-size: 18px;
+}
+.container.content.customers .well {
+  position: relative;
+  background: #FFF;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  max-width: 400px;
+  font-size: 18px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  color: #97aac1;
+  border-color: #97aac1;
+  font-weight: 300;
+}
+.container.content.customers .well:before {
+  content: "";
+  position: absolute;
+  bottom: -14px;
+  left: 20px;
+  width: 22px;
+  height: 14px;
+  background: url(../images/quote-box-arrow.png) no-repeat center center;
+}
+
+/* 修改 boot */
+.navbar-inverse .navbar-toggle{background: #333;}
+.navbar-nav{margin:0;}
+.navbar-collapse{padding:0; position: absolute; width: 100%; height: 40px; background: #222;}
+.navbar-nav li{display: inline-block;}
+@media (max-width: 767px) {
+  .navbar-nav {
+    text-align: center;
+    width: 100%;
+  }
+}
+/* 自定义css */
+.mm-title,
+.mm-title2{font-size: 24px; color: #333; padding: 40px 0 26px 0; border-bottom: 1px solid #939291;text-align: center; margin: 0 10px 20px;}
+/* 底部缺少 */
+.mm-title2{border-bottom: 0 none; margin-bottom: 0;}
+
+  .shyp-footer{
+    text-align: center;
+  margin-top: 0;
+  background: #333;
+  padding: 30px 0 20px;
+  }
+  .shyp-footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 5px 0;
+}
+.shyp-footer li {
+  display: inline-block;
+  margin: 0 30px 10px 30px;
+}
+.shyp-footer li a {
+  font-weight: 600;
+  text-transform: uppercase;
+  color: white;
+  font-size: 12px;
+}
+.shyp-footer .copyright {
+  font-size: 12px;
+}
+.shyp-footer p {
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0;
+}
