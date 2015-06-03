@@ -64,3 +64,27 @@ input,textarea{
   appearance: none;
 border-radius:0;}
 :focus{outline: 0 none;}
+
+body,
+.w-layout{background: #f0f0f0;
+  width: 100%;
+  min-width: 320px;
+  max-width: 640px;
+  margin: 0 auto;
+  font-size: 14px;
+}
+.w-advice-tip{padding: 12px 20px; font-size: .9em; color: #969593;}
+.w-textarea{border: 1px solid #cdcdcd; padding: 14px 20px; background: #fafafa; border-right: 0 none; border-left: 0 none; width: 100%; box-sizing:border-box; resize:none; height: 140px; font-size: 1em;}
+.w-error-tip{font-size: .9em; color: #e44d56; padding-left: 15px; visibility: hidden;}
+
+.w-btn-area{margin: 10px 15px; }
+.w-btn{background: #cdcdcd; height: 40px; border:0 none; line-height: 40px; border-radius: 6px; display: block; color: #fff; width: 100%; font-size: 1em;}
+.w-btn.light{background: #f39800;}
+.w-btn.light:active{background: #E78601;}
+
+/* 用户协议 */
+.w-agreement .inner{padding: 20px;}
+.w-agreement p{font-size: .9em; color: #333; margin-bottom: 10px;}
+.w-agreement-big-title{font-size: 1.2em; font-weight: bold; text-align: center; margin-bottom: 10px;}
+.w-agreement-title{font-weight: bold;}
+.w-a-list{padding: 0 10px;}
