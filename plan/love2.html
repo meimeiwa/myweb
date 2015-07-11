@@ -5,19 +5,15 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
   <title>送衣物给小朋友</title>
   <link rel="stylesheet" type="text/css" href="css/main.css">
-  <style type="text/css">
-  .ll-img-container2 img{height: 180px; width: 100%;}
-  .ll-detail{padding: 15px 10px 60px; color: #969593;}
-  .ll-detail .title{font-size: 16px; padding-bottom: 15px;}
-  .ll-detail .little-title{border-left: 3px solid #f39801; font-size: 12px; margin-bottom: 15px; padding-left: 8px;}
-  .ll-detail-intro{font-size: 12px; line-height: 1.5;}
-  .love-layout .plan-share-btn{position: fixed;}
-
-  </style>
 </head>
 <body>
   <div class="love-layout">
-    <div class="ll-img-container2">
+    <div class="love-head">
+      <a href="" class="fl-l return-left"><img src="" /></a>
+      <a href="" class="fl-r share-out-btn" id="share_out_btn">分享</a>
+      <span class="title">四川市中心校区</span>
+    </div>
+    <div class="ll-img-container">
       <img src="img/little-girl2.png" />
     </div>
     <div class="ll-detail">
@@ -84,16 +80,16 @@
       </ul>
       <a href="" class="cancel-btn" id="cancel_btn">取消</a>
     </div>
-    <a href="" class="plan-share-btn" id="plan_share_btn">我要献爱心</a>
+    <a href="" class="plan-share-btn">我要献爱心</a>
   </div>
 </body>
 <script type="text/javascript">
 window.onload=function(){
   var share_black_bg = document.getElementById('share_black_bg');
   var share_area = document.getElementById('share_area');
-  var plan_share_btn = document.getElementById('plan_share_btn');
+  var share_out_btn = document.getElementById('share_out_btn');
   var cancel_btn = document.getElementById('cancel_btn');
-  plan_share_btn.onclick=function(){
+  share_out_btn.onclick=function(){
     share_black_bg.style.display='block';
     share_area.style.display='block';
     return false;
