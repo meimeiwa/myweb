@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  <title>送衣物给小朋友</title>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <style type="text/css">
+  .ll-img-container2 img{height: 180px; width: 100%;}
+  .ll-detail{padding: 15px 10px 60px; color: #969593;}
+  .ll-detail .title{font-size: 16px; padding-bottom: 15px;}
+  .ll-detail .little-title{border-left: 3px solid #f39801; font-size: 12px; margin-bottom: 15px; padding-left: 8px;}
+  .ll-detail-intro{font-size: 12px; line-height: 1.5;}
+  .love-layout .plan-share-btn{position: fixed;}
+
+  </style>
+</head>
+<body>
+  <div class="love-layout">
+    <div class="ll-img-container2">
+      <img src="img/yuan/little-girl2.png" />
+    </div>
+    <div class="ll-detail">
+      <h4 class="title">四川市中心校区需要大量衣物</h4>
+      <p class="little-title">项目简介</p>
+      <p class="ll-detail-intro">1）家里收拾出不再穿的旧衣包鞋书等等（内衣破洞很大的就不要捐了吧）；
+      </p>
+      <p class="ll-detail-intro">1）家里收拾出不再穿的旧衣包鞋书等等（内衣破洞很大的就不要捐了吧）；
+      </p>
+      <p class="ll-detail-intro">1）家里收拾出不再穿的旧衣包鞋书等等（内衣破洞很大的就不要捐了吧）；
+      </p>
+      <p class="ll-detail-intro">1）家里收拾出不再穿的旧衣包鞋书等等（内衣破洞很大的就不要捐了吧）；
+      </p>
+      <p class="ll-detail-intro">1）家里收拾出不再穿的旧衣包鞋书等等（内衣破洞很大的就不要捐了吧）；
+      </p>
+      <p class="ll-detail-intro">1）家里收拾出不再穿的旧衣包鞋书等等（内衣破洞很大的就不要捐了吧）；
+      </p>
+      <p class="ll-detail-intro">1）家里收拾出不再穿的旧衣包鞋书等等（内衣破洞很大的就不要捐了吧）；
+      </p>
+
+    </div>
+
+    <div class="share-black-bg" id="share_black_bg"></div>
+    <div class="share-area" id="share_area">
+      <ul class="ul1">
+        <li class="fl-l">
+          <a href="">
+            <em class="share-ico sina"></em>
+            <span class="font">新浪微博</span>
+          </a>
+        </li>
+        <li class="fl-r">
+          <a href="">
+            <em class="share-ico friend"></em>
+            <span class="font">朋友圈</span>
+          </a>
+        </li>
+        <li class="dis-i">
+          <a href="">
+            <em class="share-ico weixin"></em>
+            <span class="font">微信</span>
+          </a>
+        </li>
+      </ul>
+      <ul class="ul2">
+        <li class="fl-l">
+          <a href="">
+            <em class="share-ico qq"></em>
+            <span class="font">QQ</span>
+          </a>
+        </li>
+        <li class="fl-r">
+          <a href="">
+            <em class="share-ico copy"></em>
+            <span class="font">复制链接</span>
+          </a>
+        </li>
+        <li class="dis-i">
+          <a href="">
+            <em class="share-ico qzone"></em>
+            <span class="font">QQ空间</span>
+          </a>
+        </li>
+      </ul>
+      <a href="" class="cancel-btn" id="cancel_btn">取消</a>
+    </div>
+    <a href="" class="plan-share-btn" id="plan_share_btn">我要献爱心</a>
+  </div>
+</body>
+<script type="text/javascript">
+window.onload=function(){
+  var share_black_bg = document.getElementById('share_black_bg');
+  var share_area = document.getElementById('share_area');
+  var plan_share_btn = document.getElementById('plan_share_btn');
+  var cancel_btn = document.getElementById('cancel_btn');
+  plan_share_btn.onclick=function(){
+    share_black_bg.style.display='block';
+    share_area.style.display='block';
+    return false;
+  };
+
+  cancel_btn.onclick=function(){
+    share_black_bg.style.display='none';
+    share_area.style.display='none';
+    return false;
+  }
+
+};
+</script>
+</html>

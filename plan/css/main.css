@@ -1,0 +1,50 @@
+*{padding: 0; margin: 0;}
+a,img{border:0 none;}
+a{text-decoration: none;}
+.plan-layout img{display: block; width: 100%; max-width: 500px; margin: 0 auto;}
+.plan-layout{position: relative; max-width: 500px; margin: 0 auto;}
+.plan-share-btn{position: absolute; left: 0; bottom: 0; width: 100%; height: 44px; line-height: 44px; font-size: 14px; color: #fff; text-align: center; background: #f39800; -webkit-appearance:none; -moz-appearance:none; appearance:none;}
+.plan-share-btn.btn2{width: 90%; left: 5%; bottom: 70px; border-radius: 10px;}
+
+/* 送爱心 */
+.love-body{background: #f0f0f0; max-width: 500px; margin: 0 auto;}
+.love-layout{max-width: 500px; margin: 0 auto;}
+.ll-img-container img{height: 170px; width: 100%;}
+.ll-address-item{border-bottom: 1px solid #cbcbcb; padding: 7px 12px;  position: relative; padding-left: 94px; height: 58px; display: block; background: #fff;}
+.ll-address-item .img-item{position: absolute; top: 7px; left: 12px; width: 70px; height: 58px; border-radius: 5px;}
+.ll-address-item span{display: block;}
+.ll-address-item .title{font-size: 12px; padding: 2px 0 4px; color: #636363;}
+.ll-address-item .address{font-size: 11px; color: #8e8e8e; padding-bottom: 4px;}
+.ll-address-item .num{font-size: 11px; color: #8e8e8e; padding-bottom: 4px;}
+.ll-address-item .num em{font-style: normal; color: #ffa604;}
+.ll-tip{color: #8e8e8e; font-size: 11px;text-align: center; padding:12px 0;}
+.ll-title{padding: 12px 12px 8px; border-bottom: 1px solid #cbcbcb; color: #969593; font-size: 12px;}
+
+.fl-l{float: left;}
+.fl-r{float: right;}
+.dis-i{display: inline-block;}
+
+.share-black-bg{width: 100%; position: fixed; left: 0; bottom: 0; height: 2000px;
+background:#000; opacity: .3; z-index: 8; display: none;}
+.share-area{width: 100%; position: fixed; left: 0; bottom: 0; z-index: 10; background: #eaeaea; display: none;}
+.share-area ul{padding: 32px 27px 0 27px;overflow: hidden; text-align: center;}
+.share-area .ul2{padding-top:0; padding-bottom: 14px; border-bottom: 1px solid #cbcbcb;}
+
+.cancel-btn{display: block; width: 100%; text-align: center; height: 44px; line-height: 44px; color: #969593; font-size: 14px; }
+.share-area ul li{list-style: none; margin-bottom: 6px;}
+.share-area ul li a{display: block; width: 55px; text-align: center;}
+.share-ico{display: block; width: 55px; height: 55px; border-radius: 10px;}
+
+.share-area .font{display: block; text-align: center; font-size: 11px; color: #969593; height: 24px; line-height: 24px;}
+.share-ico.sina{background: #fff url(../img/weibo.png) center center no-repeat;
+background-size: 30px 25px;}
+.share-ico.weixin{background: #fff url(../img/weixin.png) center center no-repeat;
+background-size: 30px 25px;}
+.share-ico.friend{background: #fff url(../img/friend.png) center center no-repeat;
+background-size: 30px;}
+.share-ico.qq{background: #fff url(../img/qq.png) center center no-repeat;
+background-size: 25px 30px;}
+.share-ico.qzone{background: #fff url(../img/qqzone.png) center center no-repeat;
+background-size: 30px 28px;}
+.share-ico.copy{background: #fff url(../img/fuzhi.png) center center no-repeat;
+background-size: 25px 30px;}
