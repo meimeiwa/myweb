@@ -1,0 +1,94 @@
+html, body, menu, ul, ol, li, p, dl, dt, dd, div, form, h1, h2, h3, h4, h5, h6, img, a img, input, button, textarea, fieldset {
+	padding:0;
+	margin:0;
+	border:0;
+}
+ul, ol, li {
+	list-style:none
+}
+h1, h2, h3, h4, h5, h6, b, i, em {
+	font-size:1em;
+	font-weight:normal;
+	font-style:normal
+}
+body, input, button, textarea, select {
+	-webkit-text-size-adjust:none;
+	font:normal 14px/1.5 "\5FAE\8F6F\96C5\9ED1", helvetica, verdana, san-serif;
+	outline:none;
+	color:#333;
+}
+input[type="text"], input[type="password"], input[type="button"], input[type="submit"], button, textarea {
+	-webkit-appearance:none
+}
+
+:focus{outline: 0 none;}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { 
+    color: #ccc;
+}
+input:-moz-placeholder, textarea:-moz-placeholder { 
+    color: #ccc;
+}
+input::-moz-placeholder, textarea::-moz-placeholder { 
+    color: #ccc;
+}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder { 
+    color: #ccc;
+}
+a {
+	text-decoration:none;
+	color:#333;
+}
+.img img, video ,img{
+	vertical-align:middle;
+}
+body {
+	min-width:320px;
+	margin:0 auto;
+	background:#fff
+}
+.btn {
+	display:inline-block;
+	vertical-align:middle;
+}
+.cfx:after, nav.mini:after, .h:after, .hn:after {
+	content:' ';
+	clear:both;
+	display:block;
+	height:0;
+	visibility:hidden;
+	line-height:0
+}
+input,textarea{
+-webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+border-radius:0;}
+:focus{outline: 0 none;}
+
+body,
+.w-layout{background: #f0f0f0;
+  width: 100%;
+  min-width: 320px;
+  max-width: 640px;
+  margin: 0 auto;
+  font-size: 14px;
+}
+.w-advice-tip{padding: 12px 20px; font-size: .9em; color: #969593;}
+.w-textarea{border: 1px solid #cdcdcd; padding: 14px 20px; background: #fafafa; border-right: 0 none; border-left: 0 none; width: 100%; box-sizing:border-box; resize:none; height: 140px; font-size: 1em;}
+.w-error-tip{font-size: .9em; color: #e44d56; padding-left: 15px; visibility: hidden;}
+
+.w-btn-area{margin: 10px 15px; }
+.w-btn{background: #cdcdcd; height: 40px; border:0 none; line-height: 40px; border-radius: 6px; display: block; color: #fff; width: 100%; font-size: 1em;}
+.w-btn.light{background: #f39800;}
+.w-btn.light:active{background: #E78601;}
+
+/* 用户协议 */
+.w-agreement .inner{padding: 20px;}
+.w-agreement p{font-size: .9em; color: #333; margin-bottom: 10px;}
+.w-agreement-big-title{font-size: 1.2em; font-weight: bold; text-align: center; margin-bottom: 10px;}
+.w-agreement-title{font-weight: bold;}
+.w-a-list{padding: 0 10px;}
+
+/* 联系我们 */
+.w-contact-inner{padding: 20px; font-size: .9em; color: #333;}
+.w-contact-inner em{color: #2d78f4;}
