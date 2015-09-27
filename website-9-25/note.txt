@@ -1,0 +1,69 @@
+
+/* 博客首页的右边的
+ 分类没有加方向头  可以不加
+
+ 联系我们的微信和微博图标没换 */
+
+ datepicker 的左右方向图标没有
+
+ 产品的相关产品没做
+
+ 关于我们的css没有抽离
+
+ 页面引用图片没有整理
+
+ 字体css部分没有撤除
+
+ center-yundong.html 里面的js 有修改
+
+
+
+ 套餐4个模块
+1.  套餐的模块加宽，调整位置；
+2.  套餐模块的交互效果在不同浏览器有不同的显现效果，最好统一一下。
+
+?
+
+
+
+
+index.html 首页
+
+about.html 关于我们
+
+login.html 登录
+
+register.html 注册
+
+regis-suc.html 注册成功
+
+find-pass.html 找回密码
+
+find-pass2.html 找回密码2
+
+find-pass3.html 找回密码3
+
+products.html 产品总览页
+
+product-detail.html 产品详情页
+
+blogsingle.html 健康知识
+
+bloginner.html 健康知识文章详情
+
+center.html 用户中心
+
+center-simple.html 用户中心--没有购买产品提示
+
+center-form.html 预约取样
+
+center-result.html 检测结果
+
+center-result-detail.html  检测结果--详细
+
+center-edit-pass.html 修改密码
+
+center-yinyang.html 营养建议
+
+center-yundong.html 运动建议
+

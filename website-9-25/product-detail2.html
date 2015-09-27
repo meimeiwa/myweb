@@ -1,0 +1,443 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>今唐健康管理</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/edit.css" rel="stylesheet" type="text/css" media="all" />
+    <script src="js/jquery.min.js"></script>
+</head>
+<body>
+<style type="text/css">
+  h4,h5{color: #666;}
+  .tab-show-area .jibing-item{padding-top: 10px;}
+  .jibing-item span{display: inline-block; margin: 4px 6px; }
+</style>
+<!-- start header -->
+<div class="header_bg">
+    <div class="wrap">
+        <div id="content">
+            <header id="topnav">
+                <nav class="clearfix">
+                    <ul class="fl-l">
+                        <li><a href="index.html">首页</a></li>
+                        <li class="active"><a href="products.html">产品服务</a></li>
+                        <li><a href="center-simple.html">用户中心</a></li>
+                        <li><a href="blogsingle.html">健康知识</a></li>
+                        <li><a href="about.html">关于我们</a></li>
+                        <div class="clear"></div>
+                    </ul>
+                    <div class="nav-login-area fl-r">
+                        <a href="login.html">登录</a>|<a href="register.html">注册</a>
+                    </div>
+                </nav>
+                <div class="logo"><a href="index.html"><img src="img/wedo/u-logo2.png"/></a></div>
+                <div class="clear"> </div>
+            </header><!-- @end #topnav -->
+        </div>
+    </div>
+</div>
+
+<div class="wrap">
+  <div class="cookie-area">
+    <a href="#">首页</a> &gt;
+    <a href="#">产品服务</a> &gt;
+    <span>智享套餐</span>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="product-intro-price-area">
+    <div class="img-area">
+      <img src="img/wedo/taocanpeitu2.jpg">
+    </div>
+
+    <div class="price-intro">
+      <div class="pi-title-area">
+        <span class="title">智享套餐</span>
+        <span class="price">价格：￥9880</span>
+      </div>
+      <div class="wei-code-area clearfix">
+        <img src="img/wedo/code-web.png" width="160px">
+        <p>[预约检测请扫描微信二维码]</p>
+      </div>
+      <ul class="good-tip">
+        <li><em>◆</em>足不出户  安全无创</li>
+        <li><em>◆</em>科学精准   技术权威</li>
+        <li><em>◆</em>专家建议  全面适用</li>
+        <li><em>◆</em>自主研发   不断升级</li>
+      </ul>
+
+      <div class="detail-font-container">
+        <div class="item">
+          <h5>贴心服务</h5>
+          <p>为您联系顺丰快递上门服务，全程免费，让您省心更放心。</p>
+          <br/>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="clear"></div>
+
+  </div>
+
+
+<script>
+    $(document).ready(function() {
+        $('#wrapper_tab a').click(function() {
+            if ($(this).attr('class') != $('#wrapper_tab').attr('class') ) {
+                $('#wrapper_tab').attr('class',$(this).attr('class'));
+            }
+            return false;
+        });
+
+        $('#tab_show_area li').click(function(){
+          //$('#tab_show_area').find('li').removeClass('active');
+          if( $(this).find('.show-item').hasClass('active') ){
+            return false;
+          }
+
+          $('#tab_show_area').find('.show-item').removeClass('active');
+          $('#tab_show_area').find('.show-item').slideUp();
+          $('#tab_show_area').find('.ico').html('+');
+          $(this).find('.show-item').slideDown();//('active');
+          $(this).find('.ico').html('-');
+
+          return false;
+
+        });
+
+    });
+</script>
+
+  <div class="" >
+        <div id="wrapper_tab" class="tab1">
+          <a href="#" class="tab1 tab_link">详细介绍</a>
+          <a href="#" class="tab2 tab_link">检测项目</a>
+          <a href="#" class="tab3 tab_link">检测流程</a>
+
+          <div class="clear"></div>
+<style type="text/css">
+.article-tip{width: 80px; height: 70px; padding-top: 10px; background: #4ebdbf; color: #fff;
+font-size: 20px; text-align: center; border-radius: 10px; display: block; position: absolute;left: 0; top: 20px;}
+.article-tip span{display: block; margin-bottom: 10px;}
+
+.detail-font-container{position: relative; padding-left: 100px; padding-top: 20px;}
+
+.detail-font-container .item{padding: 20px 20px 0; border-radius: 8px; border:1px solid #4ebdbf; margin-bottom: 40px; position: relative;}
+.detail-font-container .item h5{background: #fff; display: inline-block; padding: 10px;
+position: absolute; top: -20px; left: 20px;}
+.detail-font-container .item p{padding: 0;}
+</style>
+          <div class="tab1 tab_body">
+            <div class="inner">
+              <div class="font-area">
+                <div class="detail-font-container">
+                    <span class="article-tip">
+                      <span>详细</span>
+                      <span>介绍</span>
+                    </span>
+                    <div class="item">
+                      <h5>采用最前沿的美国定制Illumina芯片技术</h5>
+                      <p>今唐采用前沿的美国定制Illumina芯片技术，Illumina基因组芯片采用光纤微珠及寡核苷酸原位合成技术，是当前最为先进的超高密度基因芯片。多家参与国际人类基因组计划、国际人类基因组单倍体型图计划 （HapMAP）、千人基因组计划的国际顶级机构均采用Illumina的基因芯片。</p>
+                      <p>无论是观察物种间的多样性、疾病相关突变，还是与癌症相关的遗传特征，它都在世界前沿水平，且具有独特的优势，Illumina的技术带来了准确性和灵活性，其芯片允许通过合作研发不断扩展检测位点，以提供给客户高质量的基因检测服务。</p>
+                    </div>
+                    <div class="item">
+                      <h5>可检测常见疾病123种，涉及1922多个易感基因点位</h5>
+                      <p>目前我国居民的疾病死亡谱前4位为恶性肿瘤、心脑血管病、呼吸系统疾病和糖尿病，2014年已达到总死亡率的86.6%，导致的疾病负担已占总疾病负担的70% ，掌握自身的健康风险才能更好的把握优质生活。智享套餐涉及1922个易感基因位点，可检测近年来亚洲人容易罹患的102种常见疾病项，如肿瘤类、妇科、骨科、呼吸、免疫等系列疾病，透过检测，您
+                          还可以清楚了解自身的主要营养素及微量元素代谢能力，从而作出更精准有效的健康管理。</p>
+                    </div>
+                    <div class="item">
+                      <h5>营养及运动学专家进行专业饮食和健身指导，轻松掌握每日营养摄入菜谱及完整运动计划</h5>
+                      <p>
+                      在基因科学助力下，为实现完整的个性化健康管理，今唐的营养学专家团队将为您提供科学精准且具备操作性的定制饮食方案，包含碳水化合物、淀粉、蛋白质、矿物质、维生素、纤维等多种元素的营养摄入表；并由运动学专家进行专业的运动频率、动作示范等指导，助您进行饮食、运动的全面生活调整，我们的互联网平台将为您随时随地提供支持，构建为您量身定制的健康蓝图！
+                      </p>
+
+                    </div>
+                </div>
+                <div style="height:60px;"></div>
+                <style type="text/css">
+                .good-container h4{color: #4ebdbf;}
+                .good-container .item{margin-bottom: 20px; position: relative; padding-left: 220px;
+                  height: 174px;}
+                .good-container .item img{position: absolute; left: 0; top: 0;}
+                .good-container .gc-item h5{border-bottom: 1px solid #4ebdbf; padding-top: 10px; padding-bottom: 6px;}
+                .good-container .gc-item p{border-bottom: 1px solid #4ebdbf; padding-bottom: 10px;}
+                </style>
+                <div class="good-container">
+                  <h4>基因检测的好处</h4>
+                  <div class="item">
+                    <img src="img/wedo/yichu1.jpg" style="width:200px;" />
+                    <div class="gc-item">
+                      <h5>呵护个人健康</h5>
+                      <p>
+                      早一分检测，早一步预防。一切疾病都与基因有关。基因与环境因素相互作用，决定了人类的生、老、病、死。基因检测可以明确疾病的易感性，即个体患某种特定疾病的风险等级，摆脱疾病预防的被动和滞后性，从而主动进行健康干预。，预防疾病的发生。同时，基因检测也能令您更好的了解自己的生理及心理健康状况，从而更有效的做好体重管理与心理保健，及早知己。
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <img src="img/wedo/yichu2.jpg" style="width:200px;" />
+                    <div class="gc-item">
+                      <h5>享受家庭幸福</h5>
+                      <p>
+                      科技进步在不断延长着人类寿命，然而生命质量的提升依然有很大空间。对于家庭而言尽早规避风险才能实现长情的陪伴、尽享天伦之乐。基因检测可以检测个体是否携带导致遗传性疾病的突变基因，对疾病及早进行治疗干预，提示亲属关注个体罹患疾病的风险，并可用于遗传咨询，对孕育后代进行建议。
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <img src="img/wedo/yichu3.jpg" style="width:200px;" />
+                    <div class="gc-item">
+                      <h5>优益健康投资</h5>
+                      <p>
+                      当前，国际医学界的共识是强调疾病的预防、降低疾病发病率，做好健康管理，才能从根本上提升生活质量，避免医疗资源的浪费。我们的产品可以免去频繁的医疗检测，便捷省时；并通过运动及营养方案帮助您选择更适当的保健方法，降低患病风险。这种健康投资能大大的节约经济支出。
+                      </p>
+                    </div>
+                  </div>
+
+
+
+                </div>
+              </div>
+
+
+            </div>
+
+            <div class="clear"></div>
+          </div><!-- .tab1 .tab_body -->
+
+          <div class="tab2 tab_body">
+            <div class="inner">
+
+              <div class="tab-show-area" id="tab_show_area">
+                <ul>
+                  <li>
+                    <div class="title-area clearfix">
+                      <span class="fl-l">1、肿瘤类疾病（33种）</span>
+                      <span class="fl-r ico">+</span>
+                    </div>
+                    <div class="show-item jibing-item active">
+                      <span>胃癌</span>
+                      <span>大肠癌</span>
+                      <span>肝细胞癌</span>
+                      <span>胰腺癌</span>
+                      <span>食道癌</span>
+                      <span>胆囊癌</span>
+                      <span>肺癌</span>
+                      <span>鼻咽癌</span>
+                      <span>乳腺癌【女】</span>
+                      <span>卵巢癌【女】</span>
+                      <span>宫颈癌【女】</span>
+                      <span>子宫内膜癌【女】</span>
+                      <span>子宫肌瘤【女】</span>
+                      <span>睾丸癌【男】</span>
+                      <span>前列腺癌【男】</span>
+                      <span>颅内动脉瘤</span>
+                      <span>脑胶质瘤</span>
+                      <span>神经母细胞瘤</span>
+                      <span>多发性骨髓瘤</span>
+                      <span>骨肉瘤</span>
+                      <span>黑色素瘤</span>
+                      <span>霍奇金淋巴瘤</span>
+					            <span>非小细胞肺癌/肺癌</span>
+                      <span>肾母细胞瘤/肾癌</span>
+                      <span>基底细胞癌</span>
+                      <span>滤泡性淋巴瘤</span>
+        					     <span>淋巴瘤</span>
+        					   <span>结节硬化型霍奇金淋巴瘤</span>
+        					     <span>回肠类癌</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="title-area clearfix">
+                      <span class="fl-l">2、非肿瘤类疾病（75种）</span>
+                      <span class="fl-r ico">+</span>
+                    </div>
+                    <div class="show-item jibing-item">
+                      <span>Barrett食管病</span>
+                      <span>乳糜泻</span>
+                      <span>克罗恩病</span>
+                      <span>胰腺炎</span>
+                      <span>原发性胆汁性肝硬化</span>
+                      <span>溃疡性结肠炎</span>
+                      <span>房颤</span>
+                      <span>心脏肥大</span>
+                      <span>心脑血管</span>
+                      <span>心脏传导阻滞</span>
+                      <span>冠状动脉钙化</span>
+                      <span>中风</span>
+                      <span>心脏衰竭</span>
+                      <span>高血压</span>
+                      <span>川崎病</span>
+                      <span>心肌梗死</span>
+                      <span>静脉血栓栓塞</span>
+                      <span>法洛四联症</span>
+                      <span>子宫内膜异位症 </span>
+                      <span>多囊卵巢综合症</span>
+                      <span>先兆子痫</span>
+                      <span>椎间盘退变</span>
+                      <span>骨关节炎</span>
+                      <span>骨质疏松</span>
+					  <span>哮喘</span>
+					  <span>慢性阻塞性肺病</span>
+					  <span>间质性肺病</span>
+					  <span>龋齿</span>
+					  <span>牙周炎</span>
+					  <span>肌萎缩性侧索硬化</span>
+					  <span>强直性脊柱炎</span>
+					  <span>白塞氏病</span>
+					  <span>IgA肾病</span>
+					  <span>多发性硬化症</span>
+					  <span>类风湿关节炎</span>
+					  <span>系统性红斑狼疮</span>
+					  <span>痤疮</span>
+					  <span>特应性皮炎</span>
+					  <span>银屑病</span>
+					  <span>白癜风</span>
+					  <span>阿尔茨海默氏病</span>
+					  <span>神经性厌食症</span>
+					  <span>注意缺陷多动障碍/多动症</span>
+					  <span>自闭症</span>
+					  <span>躁郁症</span>
+					  <span>癫痫</span>
+					  <span>海马萎缩</span>
+					  <span>重性抑郁症</span>
+					  <span>偏头痛</span>
+					  <span>强迫症</span>
+					  <span>帕金森氏病</span>
+					  <span>精神分裂症</span>
+					  <span>老年黄斑变性</span>
+					  <span>过敏性鼻炎</span>
+					  <span>角膜散光</span>
+					  <span>青光眼</span>
+					  <span>近视</span>
+					  <span>骨密度</span>
+					  <span>坑和-窝沟龋/龋齿</span>
+					  <span>光滑面龋/龋齿</span>
+					  <span>新生儿狼疮</span>、
+					  <span>系统性硬化症</span>
+					  <span>焦虑抑郁症</span>
+					  <span>抑郁症（数量性状）</span>
+					  <span>多动，冲动症状/多动症</span>
+					  <span>部分性癫痫</span>
+					  <span>进行性核上性麻痹</span>
+					  <span>抽动秽语综合征</span>
+					  <span>嗜酸细胞性食管炎（儿科）</span>
+					  <span>炎症性肠病</span>
+					  <span>血压</span>
+					  <span>心血管疾病的危险因素</span>
+					  <span>舒张压</span>
+					  <span>缺血性中风</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="title-area clearfix">
+                      <span class="fl-l">3、代谢类疾病（15种）</span>
+                      <span class="fl-r ico">+</span>
+                    </div>
+                    <div class="show-item jibing-item">
+                      <span>肥胖</span>
+                      <span>Graves'病</span>
+                      <span>高甘油三酯血症</span>
+                      <span>甲状腺功能减退症</span>
+                      <span>代谢综合征</span>
+                      <span>非酒精性脂肪肝病</span>
+                      <span>1型糖尿病</span>
+                      <span>2型糖尿病</span>
+                      <span>胆固醇</span>
+                      <span>甘油三酯</span>
+                      <span>同型半胱氨酸水平</span>
+                      <span>酒精和nictotine共同依赖</span>
+                      <span>咖啡消费</span>
+                      <span>吸烟行为</span>
+                      <span>血清维生素D结合蛋白的水平</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="clear"></div>
+          </div><!-- .tab2 .tab_body -->
+
+          <div class="tab3 tab_body">
+            <div class="inner">
+              <img src="img/wedo/jiance-title.png"  /><br/>
+              <img src="img/wedo/jiance-step.png"  />
+              <!-- style="border:1px solid #eee;" -->
+            </div>
+            <div class="clear"></div>
+          </div><!-- .tab3 .tab_body -->
+
+
+          <div class="clear"></div>
+        </div>​<!-- #wrapper_tab -->
+        <div class="clear"></div>
+      </div><!-- .grid_9 -->
+
+
+
+
+</div>
+
+<div class="wrap same-products-area">
+
+  <h4>相关套餐：</h4>
+  <div class="same-products">
+    <a href="product-detail.html"><img src="img/wedo/taocanpeitu1.jpg" /></a>
+    <a href="product-detail3.html"><img src="img/wedo/taocanpeitu3.jpg" /></a>
+    <a href="product-detail4.html"><img src="img/wedo/taocanpeitu4.jpg" /></a>
+  </div>
+
+</div>
+
+<div class="footer wrap">
+    <div class="clearfix">
+        <div class="logo item" style="width:20%;"><a href="index.html"><img src="img/wedo/u-logo2.png"/></a></div>
+        <div class="item font clearfix" style="width:46%">
+            <div class="fl-l" style="padding-top:20px;">
+                <p>官方网站：www.gene01.com</p>
+                <p>微信公众号：genetangram</p>
+                <p>客服电话：40012345678（9：00-21：00）</p>
+            </div>
+
+            <img src="img/wedo/wei-code.jpg" class="code fl-r" />
+        </div>
+        <div class="item last" style="width:34%;">
+            <p>合作伙伴：</p>
+            <div class="cop-img-area">
+                <img src="img/wedo/jigou1.png" class="img-item" />
+                <img src="img/wedo/jigou2.png" class="img-item" />
+                <img src="img/wedo/jigou3.png" class="img-item" />
+                <img src="img/wedo/jigou4.png" class="img-item" />
+            </div>
+        </div>
+    </div>
+    <p class="tl-c intro">copyright@今堂健康管理科技有限公司</p>
+</div>
+
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+      <script type="text/javascript">
+      $(document).ready(function() {
+
+        var defaults = {
+            containerID: 'toTop', // fading element id
+          containerHoverID: 'toTopHover', // fading element hover id
+          scrollSpeed: 1200,
+          easingType: 'linear'
+        };
+
+
+        $().UItoTop({ easingType: 'easeOutQuart' });
+
+      });
+    </script>
+
+     <a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"></span></a>
+<!-- //end-contact -->
+</body>
+</html>

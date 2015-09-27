@@ -1,0 +1,507 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>今唐健康管理</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/edit.css" rel="stylesheet" type="text/css" media="all" />
+    <script src="js/jquery.min.js"></script>
+</head>
+<style type="text/css">
+    img{display: none;}
+</style>
+<body class="index">
+<!-- start header -->
+<div class="header_bg">
+    <div class="wrap">
+        <div id="content">
+            <header id="topnav">
+                <nav class="clearfix">
+                    <ul class="fl-l">
+                        <li class="active"><a href="index.html">首页</a></li>
+                        <li><a href="products.html">产品服务</a></li>
+                        <li><a href="center-simple.html">用户中心</a></li>
+                        <li><a href="blogsingle.html">健康知识</a></li>
+                        <li><a href="about.html">关于我们</a></li>
+                        <div class="clear"></div>
+                    </ul>
+                    <div class="nav-login-area fl-r">
+                        <a href="login.html">登录</a>|<a href="register.html">注册</a>
+                    </div>
+                </nav>
+                <div class="logo"><a href="index.html"><img src="img/wedo/u-logo2.png"/></a></div>
+                <div class="clear"> </div>
+            </header><!-- @end #topnav -->
+        </div>
+    </div>
+</div>
+
+<!-- start-slider -->
+<div class="banner2 slideBox" id="banner">
+    <div class="btn_tit effect_hd">
+        <ul><li class="on"></li><li class=""></li><!-- <li class="on"></li><li></li> --></ul>
+    </div>
+    <div class="banner_cont effect_bd">
+        <div class="tempWrap">
+            <div class="tempWrap">
+                <ul>
+                    <li class="clone">
+                        <a href="center-yundong.html" title="banner1" target="_blank" style="display:block; background: url('img/wedo/banner1.jpg') center center no-repeat;">
+                        </a>
+                    </li>
+                    <li class="clone">
+                        <a href="center-result.html" title="banner1" target="_blank" style="display:block; background: url('img/wedo/banner2.jpg') center center no-repeat;">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="fy_box" style="">
+        <!--左右翻页按钮，可以不用-->
+        <a class="prev" href="javascript:void(0)" style="display: none;"></a>
+        <a class="next" href="javascript:void(0)" style="display: none;"></a>
+    </div>
+</div>
+<script type="text/javascript" src="http://7xk2ag.com1.z0.glb.clouddn.com/static/js/jquery.SuperSlide.2.1.js"></script>
+
+<script type="text/javascript">
+(function($) {
+    var banner = $('#banner'),
+        prev = banner.find('.prev'),
+        next = banner.find('.next');
+
+    banner.slide({
+        mainCell: '.banner_cont ul',
+        effect: 'leftLoop',
+        easing: 'easeInOutQuint',
+        delayTime: 500,
+        autoPlay: true
+    });
+
+    banner.on('hover', function() {
+        prev.toggle();
+        next.toggle();
+    });
+})(jQuery);
+
+</script>
+<!---//End-da-slider----->
+
+<!-----------service------------>
+
+<div  class="service" id="service">
+	<div class="wrap">
+        <div class="heading_h" style="margin-top:60px;">
+            <h3 class="service-title">我们做什么</h3>
+            <div class="tl-c">
+                <p class="s-title-intro"><span>基于基因检测的精准健康管理</span></p>
+            </div>
+        </div>
+		<div class="service-grids">
+            <div class="images_1_of_4">
+                <em class="service-hover-corner"></em>
+                <div class="img-area ia-1">
+                    <img src="img/wedo/iconfont-jiyin-f.png">
+                </div>
+                <h3>基因检测</h3>
+                <p>使用国际最为先进的美国Illumina芯片技术与高通量检测，Illumina的基因组芯片采用光纤微珠及寡核苷酸原位合成技术，是基因组研究领域中最为先进的超高密度基因芯片。参与世界人类基因组计划的国际基因检测机构均采用Illumina的芯片。</p>
+                <!-- <div class="button"><span><a href="bloginner.html">了解更多</a></span></div> -->
+            </div>
+            <div class="images_1_of_4">
+                <em class="service-hover-corner"></em>
+                <div class="img-area ia-2">
+                    <img src="img/wedo/iconfont-fenxi-f.png">
+                </div>
+                <h3>基因分析</h3>
+                <p>参考了1000多篇国际学术界顶级的基因检测论文，全面而科学的选择易感基因位点，使检测准确率达到99%。拥有适用于中国人的庞大基因对比数据库，并针对每种疾病在国内的发病率和其自身的特点独立设计评估模型，保证报告的严谨性。</p>
+
+            </div>
+            <div class="images_1_of_4">
+                <em class="service-hover-corner"></em>
+                <div class="img-area ia-3">
+                    <img src="img/wedo/iconfont-yingyang-f.png">
+                </div>
+
+                <h3>营养建议</h3>
+                <p>根据基因检测为您制定每日所需营养摄入表，达到正确有效的补充营养素的目的。参考您的生活习惯，打造可操作的、精准的营养饮食方案，并提供食材营养成分查询功能，在后续的服务中推出应季的、针对不同人群、不同目标的健康美食资讯。</p>
+
+            </div>
+            <div class="images_1_of_4">
+                <em class="service-hover-corner"></em>
+                <div class="img-area ia-4">
+                    <img src="img/wedo/iconfont-yundong-f.png">
+                </div>
+
+                <h3>运动建议</h3>
+                <p>在帮助您了解自身疾病风险及身体特质之后，我们会从强度和周期的维度上为您制定具体可行的每日锻炼计划，并提供动作指导和运动小贴士，根据您的实施情况和运动习惯持续性的调整方案，帮您全面了解健康知识，从而获得健康和谐的身心。</p>
+
+            </div>
+            <div class="clear"> </div>
+		</div>
+   	</div><!-- @end #wrap -->
+</div>
+
+<div class="portfolio_main"id ="portfolio" style="padding:0 0 100px 0; background:#fff;">
+    <div class="wrap">
+        <div class="heading_h" style="margin-bottom:30px;">
+            <h3 class="service-title">获得的益处</h3>
+            <div class="tl-c">
+                <p class="s-title-intro"><span>全方位阐述精准健康为您带来的益处</span></p>
+            </div>
+        </div>
+
+<style type="text/css">
+.gallerylist-wrapper{height: 283px; width: 31%; position: relative; overflow: hidden; margin-right: 3.5%;}
+.gallerylist-wrapper.last{margin-right: 0;}
+.gallerylist-wrapper h2{height: 100%; width: 100%; position: absolute; top:0; left: 0;
+line-height: 283px; color: #fff; text-align: center; font-size: 24px;
+text-shadow:0 0 5px #333; z-index: 4;}
+.gallerylist-wrapper:hover h2{display: none;}
+.gallerylist-wrapper .intro-area{position: absolute; left: 0; top: 0; z-index: 8; width: 100%; height: 100%; box-sizing:border-box; display: none; padding: 20px; color: #fff; background: rgba(0,0,0,.4); font-size: 14px; line-height: 1.8;}
+.gallerylist-wrapper .intro-area .pop_title{font-size: 24px; margin:14px 0; text-align: center;}
+.gallerylist-wrapper .intro-area p{vertical-align: middle;}
+.gallerylist-wrapper:hover .intro-area{display: block;}
+</style>
+		<!--start-content-->
+		<div class="gallery">
+            <div class="container">
+                <div id="gallerylist">
+                    <div class="gallerylist-wrapper">
+                        <img src="img/wedo/gd1.jpg" alt="Image 1"/>
+                        <h2>呵护个人健康</h2>
+                        <div class="intro-area">
+                            <p class="pop_title">呵护个人健康</p>
+                            <p class="pop_p">早一分检测，早一步预防。一切疾病都与基因有关。基因与环境因素相互作用，决定了人类的生、老、病、死。基因检测可以明确疾病的易感性，即个体患某种特定疾病的风险等级，摆脱疾病预防的被动和滞后性，从而主动进行健康干预，更有效的做好健康管理与心理保健，及早知己 。</p>
+                        </div>
+                    </div>
+                    <div class="gallerylist-wrapper">
+                        <img src="img/wedo/gd2.jpg" alt="Image 2"/>
+                        <h2>享受家庭幸福</h2>
+                        <div class="intro-area">
+                            <p class="pop_title">享受家庭幸福</p>
+                            <p class="pop_p">科技进步在不断延长着人类寿命，然而生命质量的提升依然有很大空间。对于家庭而言尽早规避风险才能实现长情的陪伴、尽享天伦之乐。基因检测可以检测个体是否携带导致遗传性疾病的突变基因，对疾病及早进行治疗干预，可用于家族遗传病的预防和咨询，对孕育后代有指导性建议。</p>
+                        </div>
+                    </div>
+                    <div class="gallerylist-wrapper last">
+                        <img src="img/wedo/gd3.jpg" alt="Image 3"/>
+                        <h2>优益健康投资</h2>
+                        <div class="intro-area">
+                            <p class="pop_title">优益健康投资</p>
+                            <p class="pop_p">当前，国际医学界的共识是强调疾病的预防、降低疾病发病率，做好健康管理，才能从根本上提升生活质量，避免医疗资源的浪费。我们的产品可以免去频繁的医疗检测，便捷省时；并通过运动及营养方案帮助您选择更适当的保健方法，降低患病风险。这种健康投资能大大的节约经济支出。</p>
+                        </div>
+					</div>
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"> </div>
+			</div>
+		</div>
+	</div>	<!--end container -->
+
+</div>
+
+<!-- //portfolio// -->
+
+<!-- start-pricing -->
+
+<div class="pricing-plans" style="padding:40px 0 100px;">
+	<div class="wrap">
+        <div class="heading_h" style="margin-bottom:20px;">
+            <h3 class="service-title">产品套餐</h3>
+            <div class="tl-c">
+                <p class="s-title-intro"><span style="background:#eee;">多层次产品满足不同人群的需求</span></p>
+            </div>
+        </div>
+
+        <div class="pricing-grids clearfix">
+            <div class="pricing-grid">
+                <div class="inner">
+                    <h3><a href="products.html">优享套餐</a></h3>
+                    <ul class="ul1">
+                        <li><a href="javascript:void(0);">采用最先进的美国Illumina芯片技术</a></li>
+                        <li><a href="javascript:void(0);">可检测常见疾病89种</a></li>
+                        <li><a href="javascript:void(0);">涉及929多个易感基因点位</a></li>
+                        <li><a href="javascript:void(0);">营养学专家提供量身定制的<br/>科学饮食方案</a></li>
+                        <li><a href="javascript:void(0);">运动专家提供个性化的运动指导，<br/>轻松掌握健康之道</a></li>
+                        <li><a href="javascript:void(0);">提供食材营养成分查询的功能</a></li>
+                        <li><a href="javascript:void(0);">可持续性方案调整，记录您的方案实施情况并与您互动，真正做到私人定制</a></li>
+                    </ul>
+                    <div class="price-value">
+                        <a href="products.html">￥5880</a>
+                    </div>
+                    <div class="cart">
+                        <a class="popup-with-zoom-anim" href="products.html">立即预约</a>
+                    </div>
+                </div>
+            </div>
+            <div class="pricing-grid">
+                <div class="inner">
+                    <h3><a href="products.html">智享套餐</a></h3>
+                    <ul class="ul1">
+                        <li><a href="javascript:void(0);">采用最先进的美国Illumina芯片技术</a></li>
+                        <li><a href="javascript:void(0);">可检测常见疾病102种涉及1922多个易感基因点位</a></li>
+                        <li><a href="javascript:void(0);">主要营养素及微量元素代谢</a></li>
+                        <li><a href="javascript:void(0);">营养学专家提供量身定制的<br/>科学饮食方案</a></li>
+                        <li><a href="javascript:void(0);">运动专家提供个性化的运动指导，<br/>轻松掌握健康之道</a></li>
+                        <li><a href="javascript:void(0);">提供食材营养成分查询的功能</a></li>
+                        <li><a href="javascript:void(0);">可持续性方案调整，记录您的方案实施情况并与您互动，真正做到私人定制</a></li>
+                    </ul>
+                    <div class="price-value">
+                        <a href="products.html">￥9880</a>
+                    </div>
+                    <div class="cart">
+                        <a class="popup-with-zoom-anim" href="products.html">立即预约</a>
+                    </div>
+                </div>
+            </div>
+            <div class="pricing-grid">
+                <div class="inner">
+                    <h3><a href="products.html">尊享套餐</a></h3>
+                    <ul class="ul1">
+                        <li><a href="javascript:void(0);">采用外显子基因检测技术</a></li>
+                        <li><a href="javascript:void(0);">可检测300余种常见疾病，涉及<span style="color:#ff4400;">6500</span>个易感基因点位</a></li>
+                        <li><a href="javascript:void(0);">主要营养素及微量元素代谢，提供食材营养成分查询的功能</a></li>
+                        <li><a href="javascript:void(0);">营养学专家提供量身定制的<br/>科学饮食方案</a></li>
+                        <li><a href="javascript:void(0);">运动专家提供个性化的运动指导，<br/>轻松掌握健康之道</a></li>
+                        <li><a href="javascript:void(0);">300余种遗传性疾病，10类<br/>常见药物代谢</a></li>
+                        <li><a href="javascript:void(0);">可持续性方案调整，记录您的方案实施情况并与您互动，真正做到私人定制</a></li>
+                    </ul>
+                    <div class="price-value">
+                        <a href="products.html">￥50000</a>
+                    </div>
+                    <div class="cart">
+                        <a class="popup-with-zoom-anim" href="products.html">立即预约</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pricing-grid">
+                <div class="inner">
+                    <h3><a href="products.html">甄享套餐</a></h3>
+                    <ul class="ul1">
+                        <li><a href="javascript:void(0);">全基因组30亿序列多次检测</a></li>
+                        <li><a href="javascript:void(0);">400余种常见疾病，涉及<span style="color:#ff4400;">8700</span>个位点易感基因点位</a></li>
+                        <li><a href="javascript:void(0);">主要营养素及微量元素代谢，提供食材营养成分查询的功能</a></li>
+                        <li><a href="javascript:void(0);">运动及营养专家提供个性化的健身及饮食指导，轻松掌握健康之道</a></li>
+                        <li><a href="javascript:void(0);">500余种遗传性疾病，10类常见药物代谢</a></li>
+                        <li><a href="javascript:void(0);" style="padding:2px 1em;">检测所有基因信息, 永久储存数据，根据基因科学与医学的进展，终身更新解析您的生命密码</a></li>
+                        <li><a href="javascript:void(0);">可持续性方案调整，记录您的方案实施情况并与您互动，真正做到私人定制</a></li>
+                    </ul>
+                    <div class="price-value">
+                        <a href="products.html">￥200000</a>
+                    </div>
+                    <div class="cart">
+                        <a class="popup-with-zoom-anim" href="products.html">立即预约</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+	</div>
+</div>
+<!-- End-pricingplans -->
+<!-- end-pricing -->
+
+<!-- start-team -->
+
+<div class="team" id="team" style="padding-top:40px;">
+    <div class="wrap">
+        <div class="heading_h">
+            <h3 class="service-title">我们的团队</h3>
+            <div class="tl-c">
+                <p class="s-title-intro"><span>基因、医学、营养、运动四大领域实力专家强强联合</span></p>
+            </div>
+
+        </div>
+        <div class="middle-grids">
+            <div class="grid_1_of_4">
+
+                <div class="img-line"></div>
+                <div class="img-container">
+                    <img src="img/wedo/touxiang1.png"  alt="Image 1"/>
+                </div>
+
+                <div class="show-area">
+                    <h3>于军</h3>
+                    <h4>首席科学家</h4>
+                    <p>中国科学院北京基因组研究所博士生导师<br/>
+
+					New York University医学院生物医学博士</p>
+                </div>
+
+            </div>
+            <div class="grid_1_of_4">
+                <div class="img-line"></div>
+                <div class="img-container">
+                    <img src="img/wedo/touxiang2.png"  alt="Image 1"/>
+                </div>
+                <div class="show-area">
+                    <h3>章张</h3>
+                    <h4>科学家</h4>
+                    <p>中国科学院北京基因组研究所博士生导师<br/>
+                        中国科学院计算技术研究所计算机学博士<br/>
+                     </p>
+                </div>
+            </div>
+            <div class="grid_1_of_4">
+                <div class="img-line"></div>
+                <div class="img-container">
+                    <img src="img/wedo/touxiang3.png"  alt="Image 1"/>
+                </div>
+                <div class="show-area">
+                    <h3>胡松年</h3>
+                    <h4>科学家</h4>
+                    <p>中国科学院北京基因组研究所博士生导师<br/>
+                    中国农业大学生物化学专业博士<br/>
+                   <br/></p>
+                </div>
+
+
+          </div>
+		  <div class="grid_1_of_4">
+                <div class="img-line"></div>
+                <div class="img-container">
+                    <img src="img/wedo/touxiang4.png"  alt="Image 1"/>
+                </div>
+                 <div class="show-area">
+                     <h3>洪平</h3>
+                     <h4>运动学专家</h4>
+                     <p>国家体育总局体育科学研究所研究员博士生导师<br/>
+                    国家女子篮球队、国家体操队科研教练</p>
+                </div>
+            </div>
+		  <div class="grid_1_of_4">
+                <div class="img-line"></div>
+                <div class="img-container">
+                    <img src="img/wedo/touxiang5.png"  alt="Image 1"/>
+                </div>
+                 <div class="show-area">
+                     <h3>张谦</h3>
+                     <h4>营养学专家</h4>
+                     <p>北京同仁医院营养科副主任医师高级营养师<br/>
+                    中国营养学会临床营养分会第五届委员会委员</p>
+                </div>
+            </div>
+
+            <div class="grid_1_of_4">
+                 <div class="img-line"></div>
+                <div class="img-container">
+                    <img src="img/wedo/touxiang6.png"  alt="Image 1"/>
+                </div>
+                 <div class="show-area">
+                     <h3>高占成</h3>
+                     <h4>医学专家</h4>
+                     <p>北京大学人民医院呼吸内科主任医师<br/>北京医科大学医学博士</p>
+                </div>
+            </div>
+            <div class="grid_1_of_4">
+                 <div class="img-line"></div>
+                <div class="img-container">
+                    <img src="img/wedo/touxiang7.png"  alt="Image 1"/>
+                </div>
+                 <div class="show-area">
+                     <h3>于淼</h3>
+                     <h4>医学专家</h4>
+                     <p>北京协和医院内分泌副主任医师<br/>
+                     中国协和医科大学博士<br/>
+
+                </div>
+            </div>
+            <div class="grid_1_of_4">
+                <div class="img-line"></div>
+                <div class="img-container">
+                    <img src="img/wedo/touxiang8.png"  alt="Image 1"/>
+                </div>
+                 <div class="show-area">
+                     <h3>李淑娟</h3>
+                     <h4>医学专家</h4>
+                     <p>北京朝阳医院神经内科副主任医师<br/>
+                     首都医科大学神经病学系博士<br/>
+
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+<!-- end-team -->
+
+<!-- text-slider -->
+<style type="text/css">
+.wmuSliderPrev, .wmuSliderNext{top: 176px;}
+</style>
+<div class="wmuSlider example1">
+	<div class="wrap">
+    <article style="position: absolute; width:64%; opacity: 0;">
+
+		<div class="cont span_2_of_3">
+		    <h4>检测报告解读，使基因检测真正具有意义</h1>
+			<p> 基因检测是人生重大风险的科学评估，而基于检测结果的健康管理则是降低或化解风险的解决方案，二者缺一不可，落地可操作的解决方案使风险评估具有了真正的意义。</p>
+		</div>
+	</article>
+	<article style="position: absolute; width:64%; opacity: 0;">
+	   	<div class="cont span_2_of_3">
+		    <h4>私人定制的健康方案</h4>
+		    <p>我们专注于精准健康管理，为每个人定制自己的健康方案，真正科学的健康管理，理应是个性化的、精准的，我们从基因层面出发，摒弃粗放通用的模式，把控个体最基本的特性。</p>
+		</div>
+	</article>
+
+    <script src="js/jquery.wmuSlider.js"></script>
+	<script>
+		     $('.example1').wmuSlider();
+	</script>
+ </div>
+</div>
+<!-- //text-slider -->
+
+
+<div class="footer wrap">
+    <div class="clearfix">
+        <div class="logo item" style="width:20%;"><a href="index.html"><img src="img/wedo/u-logo2.png"/></a></div>
+        <div class="item font clearfix" style="width:46%">
+            <div class="fl-l" style="padding-top:20px;">
+                <p>官方网站：www.gene01.com</p>
+                <p>微信公众号：genetangram</p>
+                <p>客服电话：40012345678（9：00-21：00）</p>
+            </div>
+
+            <img src="img/wedo/wei-code.jpg" class="code fl-r" />
+        </div>
+        <div class="item last" style="width:34%;">
+            <p>合作伙伴：</p>
+            <div class="cop-img-area">
+                <img src="img/wedo/jigou1.png" class="img-item" />
+                <img src="img/wedo/jigou2.png" class="img-item" />
+                <img src="img/wedo/jigou3.png" class="img-item" />
+                <img src="img/wedo/jigou4.png" class="img-item" />
+            </div>
+        </div>
+    </div>
+    <p class="tl-c intro">copyright@今堂健康管理科技有限公司</p>
+</div>
+
+<!-- scroll_top_btn -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+
+        var defaults = {
+            containerID: 'toTop', // fading element id
+            containerHoverID: 'toTopHover', // fading element hover id
+            scrollSpeed: 1200,
+            easingType: 'linear'
+        };
+
+        $().UItoTop({ easingType: 'easeOutQuart' });
+
+    });
+</script>
+<a href="javascript:void(0);" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"></span></a>
+<!-- //end-contact -->
+</body>
+</html>
